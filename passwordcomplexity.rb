@@ -30,4 +30,4 @@ class GeneratePasswordComplexity
       stand.concat(nums, specs)
     end
   end
-  end
+end
