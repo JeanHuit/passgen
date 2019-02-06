@@ -1,0 +1,24 @@
+<div class = "container">
+  <h3>Simple Password Generator</h3>
+  <p>There is nothing simple about this.</p>
+
+  <form action="/form" method="post">
+   <div class="row">
+        <select class="six columns" name="complexity">
+        <option value="4">Normal</option>
+        <option value="6">Adequate Strength</option>
+        <option value="8">Above Average</option>
+        <option value="9">Nobody Can Stop Me -- yet</option>
+        </select>
+    </div>
+    <div class="row">
+        <input type="range" min="8" max="35" name="length">
+    </div>
+    <input type="submit" value="submit">
+  </form>
+    <div class="row">
+      <div class="twelve columns">
+      <input type="text" value="<%=@password%>">
+      </div>
+    </div>
+</div>
