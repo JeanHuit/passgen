@@ -4,8 +4,10 @@ $LOAD_PATH << '.'
 require 'passwordcomplexity'
 require 'passwordgenerator'
 
-get '/' do
-  erb :index
+class Main < Sinatra::Base
+  get '/' do
+    erb :index
+  end
 end
 
 post '/form' do
